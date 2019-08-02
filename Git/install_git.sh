@@ -18,7 +18,7 @@
 # Debian/Ubuntu
 git --version
 if [[ $? -eq 0 ]]; then
-	echo "Git installed"
+  echo "Git installed"
 else
-	sudo apt-get install git
+  sudo apt-get install git
 fi

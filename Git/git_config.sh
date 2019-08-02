@@ -19,15 +19,15 @@
 
 git --version
 if [ $? -ne 0 ]; then
-	echo "You must install git first."
-	echo "Do you want to install Git? [Y/n]"
-	read confirm
-	if [ "$confirm" = "Y" ]; then
-		sudo apt-get install git
-	fi
+  echo "You must install git first."
+  echo "Do you want to install Git? [Y/n]"
+  read confirm
+  if [ "$confirm" = "Y" ]; then
+    sudo apt-get install git
+  fi
 else
-	git config --global user.name "$1"
-	git config --global user.email "$2"
-	git config --global core.editor "$3"
-	git config --list
+  git config --global user.name "$1"
+  git config --global user.email "$2"
+  git config --global core.editor "$3"
+  git config --list
 fi
